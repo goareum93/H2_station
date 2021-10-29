@@ -3,6 +3,9 @@
 
 ## Introduction
 - Full demo video  [ [link](https://github.com/goareum93/H2_station/tree/master/08%2C%20Demo) ]
+
+<video src="08, Demo/Demo.mp4"></video>
+
 - Final Report  [ [link](https://github.com/goareum93/H2_station/blob/master/07%2C%20%EC%B5%9C%EC%A2%85%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/4%EC%A1%B0_%ED%95%A0%EC%88%98%EC%9E%88%EC%A1%B0_%EB%B0%9C%ED%91%9C.pdf) ]
 
 
