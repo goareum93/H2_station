@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keyword" content="산업통상자원부" />
+<meta name="description" content="산업통상자원부" />
+<title>산업통상자원부 대표홈페이지</title>
+<link rel="apple-touch-icon" href="#" />
+<link rel="stylesheet" type="text/css" href="/resource/www/css/pc.css" >
+</head>
+<body>
+<!-- // Header end // -->
+<div class="error">
+	 <p>
+	 	<span class="txt">
+			<span class="ti">죄송합니다.<br/> 요청하신 파일다운로드 처리중 에러가 발생하였습니다.<br/></span>
+			<span class="bt_S mt30">
+													<a href="#뒤로" onclick="history.back();return false;">이전화면
+												</a>
+			</span>
+
+			</span>
+	 	</span>
+	 </p>
+</div>
+</body>
+</html>

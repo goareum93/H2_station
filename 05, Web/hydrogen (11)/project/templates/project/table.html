@@ -1,0 +1,416 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hydrogen News</title>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'materialize/css/materialize.min.css' %}" media="screen,projection" />
+    <!-- Bootstrap Styles-->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Morris Chart Styles-->
+    <link href="{% static 'js/morris/morris-0.4.3.min.css' %}" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="{% static 'css/custom-styles.css' %}" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="{% static 'js/Lightweight-Chart/cssCharts.css' %}">
+</head>
+<body  style="overflow-x: hidden">
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-dark" href="home.html"> <i class="fab fa-houzz"></i> <strong>hydrogen</strong></a>
+				
+		<div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+				  <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><i class="fa fa-user fa-fw"></i> <b>4조 할수있조 &emsp; </b>
+            </ul>
+        </nav>
+		<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+<li><a href="#"><i class="fa fa-user fa-fw"></i> My Profile</a>
+</li>
+<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+</li> 
+<li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+</li>
+</ul>
+<ul id="dropdown2" class="dropdown-content w250">
+  <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 min</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 min</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 min</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small">4 min</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 min</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+</ul>
+<ul id="dropdown3" class="dropdown-content dropdown-tasks w250">
+<li>
+		<a href="#">
+			<div>
+				<p>
+					<strong>Task 1</strong>
+					<span class="pull-right text-muted">60% Complete</span>
+				</p>
+				<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+						<span class="sr-only">60% Complete (success)</span>
+					</div>
+				</div>
+			</div>
+		</a>
+	</li>
+	<li class="divider"></li>
+	<li>
+		<a href="#">
+			<div>
+				<p>
+					<strong>Task 2</strong>
+					<span class="pull-right text-muted">28% Complete</span>
+				</p>
+				<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100" style="width: 28%">
+						<span class="sr-only">28% Complete</span>
+					</div>
+				</div>
+			</div>
+		</a>
+	</li>
+	<li class="divider"></li>
+	<li>
+		<a href="#">
+			<div>
+				<p>
+					<strong>Task 3</strong>
+					<span class="pull-right text-muted">60% Complete</span>
+				</p>
+				<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+						<span class="sr-only">60% Complete (warning)</span>
+					</div>
+				</div>
+			</div>
+		</a>
+	</li>
+	<li class="divider"></li>
+	<li>
+		<a href="#">
+			<div>
+				<p>
+					<strong>Task 4</strong>
+					<span class="pull-right text-muted">85% Complete</span>
+				</p>
+				<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+						<span class="sr-only">85% Complete (danger)</span>
+					</div>
+				</div>
+			</div>
+		</a>
+	</li>
+	<li class="divider"></li>
+	<li>
+</ul>   
+<ul id="dropdown4" class="dropdown-content dropdown-tasks w250 taskList">
+  <li>
+                                <div>
+                                    <strong>John Doe</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Today</em>
+                                    </span>
+                                </div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since an kwilnw...</p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the...</p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+</ul>   
+	   <!--/. NAV TOP  -->
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+					<a href="#" class="waves-effect waves-dark"><i class="fas fa-map-marked-alt"></i> 수소충전소 추천입지</a>
+                    </li>
+						<ul class="nav nav-second-level">
+                            <li>
+                                <a href="index.html" class="waves-effect waves-dark"><i class="fas fa-gas-pump"></i> 추천입지</a>
+                            </li>
+                            <li>
+                                <a href="ui-elements.html" class="waves-effect waves-dark"><i class="fas fa-book"></i> 서울시 현황</a>
+                            </li>
+						</ul>
+
+                    <li>
+                        <a href="chart.html" class="waves-effect waves-dark"><i class="fas fa-car-side"></i> 수소차</a>
+                    </li>
+
+                    <li>
+                        <a href="tab-panel.html" class="waves-effect waves-dark"><i class="fas fa-map-marked-alt"></i> 전국 수소충전소 위치</a>
+                    </li>
+                    
+                    <li>
+                        <a href="table.html" class="active-menu waves-effect waves-dark"><i class="far fa-file-alt"></i> 수소 뉴스</a>
+                    </li>
+<!--                    <li>-->
+<!--                        <a href="form.html" class="waves-effect waves-dark"><i class="fa fa-edit"></i> Forms </a>-->
+<!--                    </li>-->
+                    <li>
+                        <a href="empty.html" class="waves-effect waves-dark"><i class="fas fa-users"></i> 프로필</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+		  <div class="header"> 
+                        <h1 class="page-header" style="line-height :2">
+                            &emsp;수소 뉴스
+                        </h1>
+              <br>
+              <br>
+              <br>
+
+          </div>
+
+		<div id="page-inners" style="display: block; margin: 0 auto;" >
+
+            <div class="item gts col-lg-2 col-md-3 col-5 col-sm" style="display: block; margin: 0 auto;" >
+					<img class="img-fluid img-responsive" src= {{news.picture.0}} alt="" style="display: block; margin: auto; padding: 0px 0px 10px 0px;"  />
+							<p>
+                                <a href={{news.url.0}} class="fancylight popup-btn info" data-fancybox-group="light" target="_blank" > <b> <font size="4">
+                                    {{news.title.0}} </font> </b>
+                                    <br></a><font color="#888888">{{news.com.0}}</font>
+							</p>
+
+
+            </div>
+			    <div class="item selfie col-lg-2 col-md-3 col-5 col-sm" style="display: block; margin: 0 auto;">
+<!--				<div class="hovereffect5 rounded-md overflow-hidden">-->
+					<img class="img-fluid img-responsive" src={{news.picture.1}} vspace="10" alt="" style="display: block; margin: 0 auto; margin: auto; padding: 0px 0px 10px 0px;" />
+<!--						<div class="overlay">-->
+							<p>
+                                <a href={{news.url.1}} class="fancylight popup-btn info" data-fancybox-group="light" target="_blank" > <b> <font size="4">
+                                    {{news.title.1}} </font> </b>
+								<br></a><font color="#888888">{{news.com.1}}</font>
+							</p>
+<!--						</div>-->
+<!--					</div>-->
+
+            </div>
+				    <div class="item lap col-lg-2 col-md-3 col-5 col-sm" style="display: block; margin: 0 auto;">
+<!--				<div class="hovereffect5 rounded-md overflow-hidden">-->
+					<img class="img-fluid img-responsive" src={{news.picture.2}} vspace="10" alt="" style="display: block; margin: 0 auto; margin: auto; padding: 0px 0px 10px 0px;" />
+<!--						<div class="overlay">-->
+							<p>
+                                <a href={{news.url.2}} class="fancylight popup-btn info" data-fancybox-group="light" target="_blank"><b><font size="4"> {{news.title.2}} </font> </b>
+								<br></a><font color="#888888">{{news.com.2}}</font>
+							</p>
+<!--						</div>-->
+<!--					</div>-->
+
+            </div>
+
+				    <div class="item selfie col-lg-2 col-md-3 col-5 col-sm" style="display: block; margin: 0 auto;">
+<!--				<div class="hovereffect5 rounded-md overflow-hidden">-->
+					<img class="img-fluid img-responsive" src={{news.picture.3}} vspace="10" alt="" style="display: block; margin: 0 auto; margin: auto; padding: 0px 0px 10px 0px;" />
+<!--						<div class="overlay">-->
+							<p>
+                                <a href={{news.url.3}} class="fancylight popup-btn info" data-fancybox-group="light" target="_blank" ><b><font size="4"> {{news.title.3}} </font> </b>
+								<br></a><font color="#888888">{{news.com.3}}</font>
+							</p>
+<!--						</div>-->
+<!--					</div>-->
+
+            </div>
+             <div style="clear: both;"></div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+				    <div class="item lap col-lg-2 col-md-3 col-5 col-sm" style="display: block; margin: 0 auto;">
+<!--				<div class="hovereffect5 rounded-md overflow-hidden">-->
+					<img class="img-fluid img-responsive" src={{news.picture.4}} vspace="10" alt="" style="display: block; margin: 0 auto; margin: auto; padding: 0px 0px 10px 0px;" />
+<!--						<div class="overlay">-->
+							<p>
+                                <a href={{news.url.4}} class="fancylight popup-btn info" data-fancybox-group="light" target="_blank" ><b><font size="4"> {{news.title.4}} </font> </b>
+								<br></a><font color="#888888">{{news.com.4}}</font>
+							</p>
+<!--						</div>-->
+<!--					</div>-->
+
+            </div>
+				    <div class="item gts col-lg-2 col-md-3 col-5 col-sm" style="display: block; margin: 0 auto;"  >
+<!--				<div class="hovereffect5 rounded-md overflow-hidden">-->
+					<img class="img-fluid img-responsive" src={{news.picture.5}} vspace="10" alt="" style="display: block; margin: 0 auto; margin: auto; padding: 0px 0px 10px 0px;" >
+<!--						<div class="overlay">-->
+							<p>
+                                <a href={{news.url.5}} class="fancylight popup-btn info" data-fancybox-group="light" target="_blank" ><b><font size="4"> {{news.title.5}} </font> </b>
+								<br></a><font color="#888888">{{news.com.5}}</font>
+							</p>
+<!--						</div>-->
+<!--					</div>-->
+                </div>
+
+
+        <div class="item gts col-lg-2 col-md-3 col-5 col-sm" style="display: block; margin: 0 auto;"  >
+<!--				<div class="hovereffect5 rounded-md overflow-hidden">-->
+					<img class="img-fluid img-responsive" src={{news.picture.6}} vspace="10" alt="" style="display: block; margin: 0 auto; margin: auto; padding: 0px 0px 10px 0px;" >
+<!--						<div class="overlay">-->
+							<p>
+                                <a href={{news.url.6}} class="fancylight popup-btn info" data-fancybox-group="light" target="_blank" ><b><font size="4"> {{news.title.6}} </font> </b>
+								<br></a><font color="#888888">{{news.com.6}}</font>
+							</p>
+<!--						</div>-->
+<!--					</div>-->
+                </div>
+
+
+
+
+
+    <div class="item gts col-lg-2 col-md-3 col-5 col-sm" style="display: block; margin: 0 auto;"  >
+<!--				<div class="hovereffect5 rounded-md overflow-hidden">-->
+					<img class="img-fluid img-responsive" src={{news.picture.7}} vspace="10" alt="" style="display: block; margin: 0 auto; margin: auto; padding: 0px 0px 10px 0px;" >
+<!--						<div class="overlay">-->
+							<p>
+                                <a href={{news.url.7}} class="fancylight popup-btn info" data-fancybox-group="light" target="_blank" ><b><font size="4"> {{news.title.7}} </font> </b>
+								<br></a><font color="#888888">{{news.com.7}}</font>
+							</p>
+<!--						</div>-->
+<!--					</div>-->
+                </div>
+
+
+
+        </div>
+         <!-- /. PAGE WRAPPER  -->
+     <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+ 
+
+    <!-- jQuery Js -->
+    <script src="{% static 'js/jquery-1.10.2.js' %}"></script>
+	
+	<!-- Bootstrap Js -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+	
+	<script src="{% static 'materialize/js/materialize.min.js' %}"></script>
+	
+    <!-- Metis Menu Js -->
+    <script src="{% static 'js/jquery.metisMenu.js' %}"></script>
+    <!-- Morris Chart Js -->
+    <script src="{% static 'js/morris/raphael-2.1.0.min.js' %}"></script>
+    <script src="{% static 'js/morris/morris.js' %}"></script>
+	
+	
+	<script src="{% static 'js/easypiechart.js' %}"></script>
+	<script src="{% static 'js/easypiechart-data.js' %}"></script>
+	
+	 <script src="{% static 'js/Lightweight-Chart/jquery.chart.js' %}"></script>
+	 <!-- DATA TABLE SCRIPTS -->
+    <script src="{% static 'js/dataTables/jquery.dataTables.js' %}"></script>
+    <script src="{% static 'js/dataTables/dataTables.bootstrap.js' %}"></script>
+        <script>
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable();
+            });
+    </script>
+    <!-- Custom Js -->
+    <script src="{% static 'js/custom-scripts.js' %}"></script>
+ 
+
+</body>
+
+</html>

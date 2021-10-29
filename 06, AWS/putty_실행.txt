@@ -1,0 +1,4 @@
+15.164.148.106
+nohup jupyter-notebook --ip=0.0.0.0 --no-browser --port=8902 &
+http://15.164.148.106:8902/
+multi1234!
